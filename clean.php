@@ -5,10 +5,10 @@
     rmdir($dirname);
     
     // removing directory using rmdir() 
-    // if(rmdir($dirname)) { 
-    //    header('Location: ../public');
-    // } 
-    // else { 
-    //    echo ("\r\n" . $dirname . " couldn't be removed"); 
+    if(rmdir($dirname)) { 
+       header('Location: ../public');
+    } 
+    else { 
+       echo ("\r\n" . $dirname . " couldn't be removed"); 
     } 
 ?> 
